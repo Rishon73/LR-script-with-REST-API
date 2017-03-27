@@ -1,0 +1,5 @@
+﻿<Properties>
+  <WatchEntry0 value="retBuffer" />
+  <WatchEntry1 value="paramsBuffer" />
+  <WatchEntry2 value="request_json_base" />
+</Properties>

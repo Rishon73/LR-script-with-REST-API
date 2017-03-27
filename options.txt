@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\Google Drive\_Work\_POCs and Demos\_My Demos\REST_API_Prudential_sample
+-IC:\Program Files (x86)\HP\Virtual User Generator\include
+-ed:\google drive\_work\_pocs and demos\_my demos\rest_api_prudential_sample\\logfile.log
+d:\google drive\_work\_pocs and demos\_my demos\rest_api_prudential_sample\\combined_REST_API_Prudential_sample.c
+d:\google drive\_work\_pocs and demos\_my demos\rest_api_prudential_sample\\pre_cci.c

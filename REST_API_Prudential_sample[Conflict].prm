@@ -1,0 +1,16 @@
+[parameter:Password]
+CurrentValue="Dagnahash123"
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="Password"
+Prompt=""
+Type="Custom"
+[parameter:Username]
+CurrentValue="Shahar"
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue="Username"
+ParamName="Username"
+Prompt=""
+Type="Custom"

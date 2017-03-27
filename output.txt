@@ -1,0 +1,83 @@
+Virtual User Script started at : 7/15/2016 10:33:32 AM
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.53.0 for Windows 7; build 1203 (Jul 15 2016 19:13:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Run-Time Settings file: "D:\Google Drive\_Work\_POCs and Demos\_My Demos\REST_API_Prudential_sample\\default.cfg"  	[MsgId: MMSG-27141]
+NVAPIWrapper.h(162): 
+*************
+Request Name: TestTokens
+Request Type: GET
+Request URL: http://192.168.85.140:8182/shunra/api/emulation/tokens?all=false
+Request Body: 
+*************
+NVAPIWrapper.h(168): web_reg_save_param started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(168): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+NVAPIWrapper.h(170): web_add_header("Authorization") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(170): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+NVAPIWrapper.h(170): web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(171): Warning -26377: No match found for the requested parameter "Response". Either the specified boundaries were not found in the response or the matched text is longer than current max html parameter size of 256 bytes. The total length of the response is 0 bytes. You can use "web_set_max_html_param_len" to increase the max parameter size.  	[MsgId: MWAR-26377]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") highest severity level was "warning", 0 body bytes, 207 header bytes  	[MsgId: MMSG-26388]
+NVAPIWrapper.h(142): ------
+---0---
+NVAPIWrapper.h(111): >>401<<
+NVAPIWrapper.h(162): 
+*************
+Request Name: StartFromProfile
+Request Type: POST
+Request URL: http://192.168.85.140:8182/shunra/api/emulation/custom
+Request Body: {"flows": [{"flowId": "Flow_1","srcIpRange": {"include": [{"from": "192.168.1.6","to": "192.168.1.60"}]},"latency": 500,"packetloss": 1.000000,"bandwidthIn": 0.000000,"bandwidthOut": 0.000000,"isCaptureClientPL": "false"}],"testMetadata": {"testName":"Prudential-User Defined Test_1468593212","description":"User defined NV test for testing backend servers","networkScenario":"User defined networks"}}
+*************
+NVAPIWrapper.h(168): web_reg_save_param started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(168): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+NVAPIWrapper.h(170): web_add_header("Authorization") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(170): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+NVAPIWrapper.h(170): web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") was successful, 88 body bytes, 365 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+NVAPIWrapper.h(115): ---"testToken":"777f994e-eb6b-47a1-9bbd-e53bde949cf3ec9ead4b-a4f2-42b9-9e37-34e4cbe6a66e"}---
+---87---
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Run-Time Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(7): lr_think_time: 40.00 seconds.
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+NVAPIWrapper.h(162): 
+*************
+Request Name: TestTokens
+Request Type: GET
+Request URL: http://192.168.85.140:8182/shunra/api/emulation/tokens?all=false
+Request Body: 
+*************
+NVAPIWrapper.h(168): web_reg_save_param started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(168): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+NVAPIWrapper.h(170): web_add_header("Authorization") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(170): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+NVAPIWrapper.h(170): web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") was successful, 189 body bytes, 221 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+NVAPIWrapper.h(142): ---"testTokens":["777f994e-eb6b-47a1-9bbd-e53bde949cf3ec9ead4b-a4f2-42b9-9e37-34e4cbe6a66e"],"emulationMode":"MULTI_USER"}}}]}---
+---123---
+NVAPIWrapper.h(162): 
+*************
+Request Name: StopNV
+Request Type: DELETE
+Request URL: http://192.168.85.140:8182/shunra/api/emulation
+Request Body: 
+*************
+NVAPIWrapper.h(168): web_reg_save_param started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(168): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+NVAPIWrapper.h(170): web_add_header("Authorization") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(170): Warning -26594: The header being added may cause unpredictable results if applied to ALL the URLs generated on behalf of the next script function. It will apply to the primary URL only.  	[MsgId: MWAR-26594]
+NVAPIWrapper.h(170): web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") started  	[MsgId: MMSG-26355]
+NVAPIWrapper.h(171): web_custom_request("{REQ_NAME}") was successful, 240 body bytes, 221 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+NVAPIWrapper.h(131): --- "777f994e-eb6b-47a1-9bbd-e53bde949cf3ec9ead4b-a4f2-42b9-9e37-34e4cbe6a66e":"C:\\ProgramData\\HP\\NV\\VCat\\777f994e-eb6b-47a1-9bbd-e53bde949cf3\\ec9ead4b-a4f2-42b9-9e37-34e4cbe6a66e\\AnalysisResources.shunra"}} ---
+Ending action vuser_end.
+Vuser Terminated.

@@ -1,0 +1,6 @@
+Error: C interpreter run time error:  Error -- File error : d:\google drive\_work\_pocs and demos\_my demos\rest_api_prudential_sample\\REST_API_Prudential_sample.ci The system cannot find the file specified.
+.
+Error: CCI cannot load code file d:\google drive\_work\_pocs and demos\_my demos\rest_api_prudential_sample\\REST_API_Prudential_sample.ci.
+Warning: Extension cciext.dll reports error -19895 on call to function ExtPerThreadInitialize
+Error: Vuser failed to initialize extension cciext.dll.
+Vuser Terminated.
